@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Professor Insights Preview</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; color: #25323b; background: #edf2f0; font: 15px/1.5 Inter, ui-sans-serif, system-ui, sans-serif; }
+      header { height: 72px; display: flex; align-items: center; padding: 0 7vw; color: white; background: #173f45; font-size: 20px; font-weight: 700; }
+      main { width: min(920px, 86vw); margin: 44px auto; }
+      h1 { margin-bottom: 6px; font-size: 30px; }
+      p { color: #66747b; }
+      .courses { display: grid; gap: 14px; margin-top: 28px; }
+      .course { padding: 22px; background: white; border: 1px solid #d9e3df; border-radius: 12px; box-shadow: 0 3px 12px rgba(26, 56, 61, .06); }
+      .course strong, .course span { display: block; }
+      .course span { margin-top: 4px; color: #6e7c82; }
+    </style>
+  </head>
+  <body>
+    <header>Student Portal</header>
+    <main>
+      <h1>Fall 2026 course registration</h1>
+      <p>This page exists only to preview the extension overlay during development.</p>
+      <div class="courses">
+        <div class="course"><strong>MATH 221 · Calculus II</strong><span>Professor Bryce Jenkin · M/W 10:10 AM</span></div>
+        <div class="course"><strong>BUS 304 · Organizational Behavior</strong><span>Professor Chris Carr · T/Th 1:40 PM</span></div>
+        <div class="course"><strong>HIST 201 · Global History</strong><span>Professor Jonathan Wilson · M/W/F 9:10 AM</span></div>
+        <div class="course"><strong>BIO 101 · General Biology</strong><span>Professor Jordan Smith · T/Th 11:10 AM</span></div>
+      </div>
+    </main>
+    <script>
+      window.__PROFESSOR_INSIGHTS_PREVIEW_SCHOOL__ = {
+        id: "153", nodeId: "U2Nob29sLTE1Mw==", name: "California Polytechnic State University", city: "San Luis Obispo", state: "CA"
+      };
+      window.__PROFESSOR_INSIGHTS_PREVIEW_SCHOOLS__ = [
+        window.__PROFESSOR_INSIGHTS_PREVIEW_SCHOOL__,
+        { id: "1072", nodeId: "U2Nob29sLTEwNzI=", name: "University of California Berkeley", city: "Berkeley", state: "CA" },
+        { id: "696", nodeId: "U2Nob29sLTY5Ng==", name: "Northeastern University", city: "Boston", state: "MA" },
+        { id: "953", nodeId: "U2Nob29sLTk1Mw==", name: "Stanford University", city: "Stanford", state: "CA" }
+      ];
+      window.__PROFESSOR_INSIGHTS_PREVIEW_DATA__ = [
+        {
+          id: "fad73f10-0664-4df9-91f3-d91210f3a26b", name: "Bryce Jenkin", firstName: "Bryce", lastName: "Jenkin", department: "MATH", course: "MATH 221",
+          rating: 3.35, reviews: 244, clarity: 3.39, studentSupport: 3.27, tags: ["Supplemental Study Material", "High In-Person Availability"],
+          links: {
+            polyratings: "https://polyratings.dev/professor/fad73f10-0664-4df9-91f3-d91210f3a26b",
+            rmp: "https://www.ratemyprofessors.com/search/professors/153?q=Bryce%20Jenkin",
+            reddit: "https://www.reddit.com/r/CalPoly/search/?q=%22Bryce%20Jenkin%22&restrict_sr=1&sort=relevance&t=all"
+          }
+        },
+        {
+          id: "10566fa1-e8c6-419c-967a-68057f2643f8", name: "Chris Carr", firstName: "Chris", lastName: "Carr", rmpLegacyId: 1353733, department: "BUS", course: "BUS 304",
+          rating: 3.52, reviews: 238, clarity: 3.61, studentSupport: 3.32, tags: ["Uploads Slides", "Flexible Attendance Policy"],
+          links: {
+            polyratings: "https://polyratings.dev/professor/10566fa1-e8c6-419c-967a-68057f2643f8",
+            rmp: "https://www.ratemyprofessors.com/search/professors/153?q=Chris%20Carr",
+            reddit: "https://www.reddit.com/r/CalPoly/search/?q=%22Chris%20Carr%22&restrict_sr=1&sort=relevance&t=all"
+          }
+        },
+        {
+          id: "4f357608-b0c4-405f-85fa-ca5134e9a3fa", name: "Jonathan Wilson", firstName: "Jonathan", lastName: "Wilson", rmpLegacyId: 2704457, department: "HIST", course: "HIST 201",
+          rating: 3.77, reviews: 226, clarity: 3.82, studentSupport: 3.66, tags: ["Community rated"],
+          links: {
+            polyratings: "https://polyratings.dev/professor/4f357608-b0c4-405f-85fa-ca5134e9a3fa",
+            rmp: "https://www.ratemyprofessors.com/search/professors/153?q=Jonathan%20Wilson",
+            reddit: "https://www.reddit.com/r/CalPoly/search/?q=%22Jonathan%20Wilson%22&restrict_sr=1&sort=relevance&t=all"
+          }
+        }
+      ];
+    </script>
+    <script src="detector.js"></script>
+    <script src="quick-rate.js"></script>
+    <script src="albums.js"></script>
+    <script src="content.js"></script>
+  </body>
+</html>

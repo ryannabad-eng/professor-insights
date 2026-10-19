@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Professor Insights",
+  "version": "0.7.0",
+  "description": "Detect professors, check school-scoped reviews, open the correct rating page, and organize saved professors into albums.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [
+    "https://api-prod.polyratings.org/*",
+    "https://raw.githubusercontent.com/Polyratings/polyratings-data/*",
+    "https://www.ratemyprofessors.com/*"
+  ],
+  "optional_host_permissions": [
+    "https://cmsweb.pscs.calpoly.edu/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Toggle Professor Insights"
+  }
+}
