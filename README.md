@@ -1,30 +1,20 @@
-# Professor detection fixture tests
+# Professor Insights
 
-These dependency-free tests run the real `extractPageContext` and `addCandidate`
-functions from `detector.js` against small portal fixtures. They also verify that
-the toolbar injection is capable of reaching PeopleSoft's `ptifrmtgtframe`.
+Professor Insights is a Chrome extension that helps Cal Poly students see professor ratings and reviews while registering for classes.
 
-Run them from the extension directory:
+## Alpha 0.1 Release Notes
 
-```powershell
-node --test .\tests\detection.test.mjs
-```
+This version can detect professor names on class registration pages, show professor ratings, search professors manually, save professors into albums, and open a verified Rate My Professors page for Quick Rate.
 
-The fixtures intentionally describe desired behavior, so a parser or frame gap
-appears as a failing test. Add a sanitized fixture when a new portal layout is
-reported; do not copy private student data into this directory.
+## How to Install
 
-Coverage:
+1. Download the project files.
+2. Open Chrome and go to chrome://extensions.
+3. Turn on Developer mode.
+4. Click Load unpacked.
+5. Select the professor-insights folder.
+6. Open a class registration page and click the Professor Insights extension icon.
 
-- PeopleSoft classic `MTG_INSTR` fields
-- PeopleSoft Fluid label/value markup
-- accessible `aria-label` cards
-- multiple instructors inside one field
-- modern `Faculty` / `data-testid` cards
-- current Cal Poly Material UI instructor grids
-- instructor names supplied only through an ARIA label
-- PeopleSoft target-content iframe reachability
+## Feedback
 
-The DOM facade implements only what the production detector uses: `body.innerText`,
-the current instructor selector list, and element `textContent`. It is not a
-general-purpose browser DOM replacement.
+Please share feedback about whether the extension worked, what was confusing, and what features you would want next.
